@@ -9,42 +9,58 @@
 <body>
   <main>
     <h1>Privacy Policy</h1>
-    <p class="meta">Finance Observability · Effective 27 September 2026</p>
+    <p class="meta">Finance Observability · Effective 22 October 2026</p>
 
     <h2>Who uses this application</h2>
     <p>
-      Finance Observability is a personal application used only by its owner. It runs on the
-      owner's own computer. There is no hosted service, no user accounts, and no other users.
+      Finance Observability is a personal application used by one household: its owner and the
+      owner's spouse. It is not offered to the public. There are no sign-ups, no user accounts,
+      and no other users.
     </p>
 
     <h2>What Google user data is accessed</h2>
     <ul>
       <li>
         <strong>Gmail read-only access</strong> (<code>https://www.googleapis.com/auth/gmail.readonly</code>).
+        Each household member who connects their Gmail account grants this access separately.
         The application searches only for messages that match senders, subjects and attachment
-        types that the owner has configured, and downloads the matching PDF attachments.
-        It does not read, index or analyse any other email.
-      </li>
-      <li>
-        <strong>Gmail send access</strong> (<code>https://www.googleapis.com/auth/gmail.send</code>).
-        Used only to send short notification emails from the owner's account to the owner
-        (for example, "an expected statement is missing"). These emails contain no financial
-        figures or account numbers.
+        types that the owner has configured (bank, card, investment, insurance and payslip
+        statements), and downloads the matching PDF attachments. It does not read, index or
+        analyse any other email, and it never sends, changes or deletes email.
       </li>
     </ul>
 
-    <h2>How the data is stored</h2>
-    <p>
-      Downloaded attachments and all data derived from them are stored only on the owner's own
-      computer (and in the owner's own cloud storage folder). OAuth tokens are stored in the
-      operating system's secure keychain. No Google user data is sent to the developer or to
-      any third-party server.
-    </p>
+    <h2>How the data is processed and stored</h2>
+    <ul>
+      <li>
+        Downloaded attachments are processed only on the owner's own computer. The attachments
+        and all data derived from them are stored on that computer, in an encrypted database.
+        Attachments are kept password-protected, as received, in the owner's own cloud
+        storage folder.
+      </li>
+      <li>
+        OAuth tokens and statement passwords are stored in the operating system's secure
+        keychain.
+      </li>
+      <li>
+        A summary of the household's finances is encrypted on the owner's computer before it
+        leaves it, and is stored in cloud storage that the owner controls. Only the household's
+        own phones hold the key to decrypt it. The storage provider cannot read it.
+      </li>
+      <li>
+        Encrypted backups of the database are stored the same way.
+      </li>
+      <li>
+        No Google user data is sent to the developer, to an analytics service, or to any other
+        third party.
+      </li>
+    </ul>
 
     <h2>Sharing</h2>
     <p>
       Google user data is not sold, shared, transferred, or used for advertising, and is not
-      used to train any machine-learning or AI model.
+      used to train any machine-learning or AI model. The household's data is visible only to
+      the two household members.
     </p>
 
     <h2>Limited Use</h2>
@@ -57,9 +73,10 @@
 
     <h2>Revoking access and deleting data</h2>
     <p>
-      Access can be revoked at any time at
+      Each household member can revoke access at any time at
       <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
-      Deleting the application's local data folder removes all stored data.
+      Deleting the application's local data folder, its encrypted summary and its encrypted
+      backups removes all stored data.
     </p>
 
     <p><a href="index.html">Home</a></p>
