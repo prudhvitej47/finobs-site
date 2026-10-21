@@ -43,12 +43,13 @@
         keychain.
       </li>
       <li>
-        A summary of the household's finances is encrypted on the owner's computer before it
-        leaves it, and is stored in cloud storage that the owner controls. Only the household's
-        own phones hold the key to decrypt it. The storage provider cannot read it.
+        A summary of the household's finances is encrypted on the owner's computer and sent
+        only to the household's own phones, over a private network that is not reachable from
+        the internet. Only those phones hold the key to decrypt it.
       </li>
       <li>
-        Encrypted backups of the database are stored the same way.
+        Encrypted backups of the database are stored in cloud storage that the owner controls.
+        The storage provider cannot read them.
       </li>
       <li>
         No Google user data is sent to the developer, to an analytics service, or to any other
@@ -75,7 +76,7 @@
     <p>
       Each household member can revoke access at any time at
       <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
-      Deleting the application's local data folder, its encrypted summary and its encrypted
+      Deleting the application's local data folder, the app on each phone, and the encrypted
       backups removes all stored data.
     </p>
 
